@@ -8,5 +8,4 @@ const onTituloEdit = (titulos, tituloAlterado) => titulos.map(titulo => {
     }
 })
   
-  
-  export default onTituloEdit
+export default onTituloEdit
