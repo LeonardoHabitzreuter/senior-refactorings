@@ -1,4 +1,4 @@
-import getWeekDay from '../src/old/2.Switch'
+import getWeekDay from '../src/2.Switch'
 
 describe('Switch', () => {
   

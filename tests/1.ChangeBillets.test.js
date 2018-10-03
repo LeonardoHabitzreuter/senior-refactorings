@@ -1,4 +1,4 @@
-import changeBillets from '../src/new/1.ChangeBillets'
+import changeBillets from '../src/1.ChangeBillets'
 
 describe('Change Billets', () => {
     const titulo1 = {
