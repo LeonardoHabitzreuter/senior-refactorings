@@ -29,6 +29,7 @@
     "regenerator-runtime": "^0.12.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0"
+    "@babel/polyfill": "^7.0.0",
+    "ramda": "^0.25.0"
   }
 }
