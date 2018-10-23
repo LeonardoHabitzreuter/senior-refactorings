@@ -1,11 +1,8 @@
-const onTituloEdit = (titulos, tituloAlterado) => titulos.map(titulo => {
-    const { numero, vencimentoOriginal, vencimentoProrrogado,
-        provavelPagamento, dataNegociados, dataDesconto } = titulo
+import { pipe, pick, merge } from 'ramda'
 
-    return {
-        ...tituloAlterado,
-        numero, vencimentoOriginal, vencimentoProrrogado, provavelPagamento, dataNegociados, dataDesconto
-    }
-})
+const onTituloEdit = (titulos, tituloAlterado) => titulos.map(pipe(
+  pick(['numero', 'vencimentoOriginal', 'vencimentoProrrogado', 'provavelPagamento', 'dataNegociados', 'dataDesconto']),
+  merge(tituloAlterado)
+))
   
 export default onTituloEdit

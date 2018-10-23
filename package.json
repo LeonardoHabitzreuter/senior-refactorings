@@ -4,7 +4,8 @@
   "description": "This project contains some important content for an experimental hands-on refactoring in the senior projects",
   "main": "tests",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",

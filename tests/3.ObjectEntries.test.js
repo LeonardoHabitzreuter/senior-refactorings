@@ -18,7 +18,7 @@ describe('ObjectEntries', () => {
     round(obj, fn)
 
     expect(fn.mock.calls).toEqual(
-      expect.arrayContaining([[1, 'valorBaixar', expect.anything()], [2, 'valorJuros', expect.anything()]])
+      expect.arrayContaining([[1, 'valorBaixar'], [2, 'valorJuros']])
     )
   })
 })
