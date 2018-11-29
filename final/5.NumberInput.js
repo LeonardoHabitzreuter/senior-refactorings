@@ -1,4 +1,4 @@
-import { pipe, trim, replace, split, filter, either, equals, not, objOf } from 'ramda'
+import { pipe, trim, replace, split, filter, either, equals, not, reduce, objOf } from 'ramda'
 
 export default (field, value) => {
   const joinValues = (prev, next) => (
@@ -18,5 +18,5 @@ export default (field, value) => {
     reduce(joinValues, '')
   )
 
-  this.formGroup.patchValue(objOf(field, formatDecimalValue(value)))
+  return objOf(field, formatDecimalValue(value))
 }
