@@ -1,4 +1,4 @@
-import convertTextToNumber from '../final//5.NumberInput'
+import convertTextToNumber from '../src/5.NumberInput'
 
 describe('InputNumber', () => {
   test('should remove the space from input', () => {
